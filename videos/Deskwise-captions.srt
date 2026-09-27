@@ -1,0 +1,181 @@
+1
+00:00:00,000 --> 00:00:03,826
+Hi, and welcome to our full-stack AI
+portfolio walkthrough.
+
+2
+00:00:03,826 --> 00:00:08,928
+This project brings together a responsive
+portfolio website and Deskwise, a working
+
+3
+00:00:08,928 --> 00:00:10,204
+support assistant demo.
+
+4
+00:00:10,204 --> 00:00:17,006
+The goal is to show a complete user journey,
+from a polished interface to a backend
+
+5
+00:00:17,006 --> 00:00:18,706
+API and persistent storage.
+
+6
+00:00:18,706 --> 00:00:24,658
+The identity shown here is a placeholder,
+and the two additional project cards are
+
+7
+00:00:24,658 --> 00:00:26,784
+clearly marked as design concepts.
+
+8
+00:00:27,984 --> 00:00:29,948
+Let’s open the AI playground.
+
+9
+00:00:29,948 --> 00:00:33,876
+Deskwise answers questions about a fictional
+store’s returns, shipping, account
+
+10
+00:00:33,876 --> 00:00:35,055
+access, and billing.
+
+11
+00:00:35,055 --> 00:00:38,590
+For this recording, we’re using the built-in
+demo mode.
+
+12
+00:00:38,590 --> 00:00:42,912
+It retrieves sample policies and returns
+deterministic responses, without making a
+
+13
+00:00:42,912 --> 00:00:44,090
+live model request.
+
+14
+00:00:44,090 --> 00:00:50,375
+When we ask how to return an order, the
+assistant displays the relevant policy and a
+
+15
+00:00:50,375 --> 00:00:51,161
+source reference.
+
+16
+00:00:51,161 --> 00:00:54,304
+The conversation is saved through the Python
+backend.
+
+17
+00:00:55,517 --> 00:01:00,945
+Clicking the reference opens the knowledge
+base, so we can inspect the policy behind
+
+18
+00:01:00,945 --> 00:01:01,720
+the response.
+
+19
+00:01:01,720 --> 00:01:06,372
+This keeps the information visible instead
+of presenting an answer without context.
+
+20
+00:01:06,372 --> 00:01:09,474
+The project also includes an optional OpenAI
+integration.
+
+21
+00:01:09,474 --> 00:01:14,901
+With a valid API key configured securely on
+the server, the backend sends selected
+
+22
+00:01:14,901 --> 00:01:18,390
+policy excerpts and recent conversation
+history to the model.
+
+23
+00:01:18,390 --> 00:01:22,267
+That live integration is not being
+demonstrated in this recording.
+
+24
+00:01:23,466 --> 00:01:26,041
+Some questions need a human next step.
+
+25
+00:01:26,041 --> 00:01:31,558
+In the support tickets panel, we can create
+a ticket for a delayed delivery, then
+
+26
+00:01:31,558 --> 00:01:33,765
+mark it resolved or reopen it.
+
+27
+00:01:33,765 --> 00:01:38,547
+These are local demo tickets, not messages
+sent to an actual support team.
+
+28
+00:01:38,547 --> 00:01:41,489
+Refreshing the page shows that the record
+persists.
+
+29
+00:01:41,489 --> 00:01:45,535
+The database keeps each browser session’s
+conversations and tickets separate, while
+
+30
+00:01:45,535 --> 00:01:48,846
+the interface gives users clear feedback
+about their actions.
+
+31
+00:01:50,045 --> 00:01:56,203
+Under the hood, the application uses HTML,
+CSS, and JavaScript on the frontend, Flask
+
+32
+00:01:56,203 --> 00:02:00,161
+and Python for the API, and SQLite for
+storage.
+
+33
+00:02:00,161 --> 00:02:04,559
+It includes input validation, CSRF checks,
+and parameterized database queries.
+
+34
+00:02:04,559 --> 00:02:10,717
+Six backend tests passed, along with browser
+checks of the core workflow and mobile
+
+35
+00:02:10,717 --> 00:02:11,157
+layout.
+
+36
+00:02:11,157 --> 00:02:15,555
+This is a portfolio demonstration, not a
+production support platform.
+
+37
+00:02:15,555 --> 00:02:20,833
+It provides a focused starting point for
+discussing your product requirements and
+
+38
+00:02:20,833 --> 00:02:22,592
+building the next iteration.
+
+39
+00:02:22,592 --> 00:02:23,912
+Thanks for watching.
